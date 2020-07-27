@@ -6,10 +6,14 @@ import { AtNavBar } from 'taro-ui'
 
 import './index.scss'
 
+import api from '../../service/api'
+
+
 export default class Index extends Component {
 
-  componentWillMount() { }
-
+  componentWillMount() {
+    api.get('news/list', '')
+  }
   componentDidMount() { }
 
   componentWillUnmount() { }
