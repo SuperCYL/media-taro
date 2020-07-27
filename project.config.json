@@ -1,6 +1,6 @@
 {
 	"miniprogramRoot": ".dist",
-	"projectname": "media-h5",
+	"projectname": "media-taro",
 	"description": "融媒云移动端框架",
 	"appid": "touristappid",
 	"setting": {
