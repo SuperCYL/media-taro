@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'media-h5',
+  projectName: 'media-taro',
   date: '2020-7-27',
   designWidth: 750,
   deviceRatio: {
