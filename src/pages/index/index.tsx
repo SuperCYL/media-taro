@@ -18,8 +18,6 @@ export default class Index extends Component {
 
   componentWillUnmount() { }
 
-  componentDidShow() { }
-
   componentDidHide() { }
   gototest() {
     Taro.navigateTo({

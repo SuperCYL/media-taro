@@ -2,22 +2,21 @@ import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
 
-import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './login.scss'
 
 export default class Login extends Component {
 
-  componentWillMount () { }
+  componentWillMount() { }
 
-  componentDidMount () { }
+  componentDidMount() { }
 
-  componentWillUnmount () { }
+  componentWillUnmount() { }
 
-  componentDidShow () { }
+  componentDidShow() { }
 
-  componentDidHide () { }
+  componentDidHide() { }
 
-  render () {
+  render() {
     return (
       <View className='login'>
         <Text>Hello world!</Text>
