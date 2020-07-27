@@ -5,9 +5,14 @@ import { AtButton } from 'taro-ui'
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.scss'
 
+import api from '../../service/api'
+
+
 export default class Index extends Component {
 
-  componentWillMount () { }
+  componentWillMount () {
+    api.get('news/list', '')
+   }
 
   componentDidMount () { }
 
