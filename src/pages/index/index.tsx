@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Taro from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
 import { AtNavBar } from 'taro-ui'
 
@@ -21,29 +21,15 @@ export default class Index extends Component {
   componentDidShow() { }
 
   componentDidHide() { }
-
-  click() {
+  gototest() {
     Taro.navigateTo({
-      url: '/pages/login/login'
+      url: '/pages/test/index'
     })
   }
-
   render() {
     return (
       <View className='index'>
-        <AtNavBar
-          color='#000'
-          title='NavBar 导航栏示例'
-          leftText='返回'
-          rightFirstIconType='bullet-list'
-          rightSecondIconType='user'
-        />
-        <Text >Hello world!</Text>
-        <AtButton type='primary'>I need Taro UI</AtButton>
-        <Text>Taro UI 支持 Vue 了吗？</Text>
-        <AtButton type='primary' circle={true}>支持</AtButton>
-        <Text>共建？</Text>
-        <AtButton onClick={this.click} type='secondary' circle={true}>跳到登录</AtButton>
+        <AtButton type='primary' onClick={this.gototest.bind(this)} circle={true}>跳转test</AtButton>
       </View>
     )
   }
