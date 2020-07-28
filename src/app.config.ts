@@ -1,7 +1,7 @@
 export default {
   pages: [
-    'pages/index/index',
     'pages/login/login',
+    'pages/index/index',
     'pages/test/index'
   ],
   window: {
@@ -18,7 +18,7 @@ export default {
       iconPath: "",
       selectedIconPath: ""
     }, {
-      pagePath: "pages/login/login",
+      pagePath: "pages/test/index",
       text: "登录",
       iconPath: "",
       selectedIconPath: ""
