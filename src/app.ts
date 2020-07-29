@@ -2,14 +2,15 @@ import { Component } from 'react'
 import './app.scss'
 
 class App extends Component {
-  state={
+  state = {
     List:[]
   }
   config = {
     pages: [
       'pages/login/login',
       'pages/index/index',
-      'pages/test/index'
+      'pages/test/index',
+      'pages/line/line'
     ],
     window: {
       backgroundTextStyle: 'light',
