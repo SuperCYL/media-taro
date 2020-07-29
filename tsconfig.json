@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@/api/*": [
+        "./src/api/*"
+      ],
+      "@/servers/*": [
+        "./src/servers/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+    }
+  }
+}

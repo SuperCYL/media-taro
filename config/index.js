@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   projectName: 'media-taro',
   date: '2020-7-27',
@@ -9,6 +11,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
+  alias: {
+    '@/api': path.resolve(__dirname, '..', 'src/api'),
+    '@/servers': path.resolve(__dirname, '..', 'src/servers'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+  },
   plugins: [],
   defineConstants: {
   },
