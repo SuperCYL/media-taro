@@ -1,31 +1,46 @@
 import React, { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import { AtButton } from 'taro-ui'
+import Taro from '@tarojs/taro'
+import { AtForm, AtInput, AtButton } from 'taro-ui'
 
 import './login.scss'
 
 export default class Login extends Component {
-
-  componentWillMount() { }
-
-  componentDidMount() { }
-
-  componentWillUnmount() { }
-
-  componentDidShow() { }
-
-  componentDidHide() { }
-
+  constructor() {
+    super(null)
+    this.state = {
+      value: ''
+    }
+  }
+  handleChange(value) {
+    this.setState({
+      value
+    })
+  }
+  onSubmit(event) {
+    console.log(this.state['value'])
+  }
+  onReset(event) {
+    this.setState({
+      value: '',
+    })
+  }
   render() {
     return (
-      <View className='login'>
-        <Text>Hello world!</Text>
-        <AtButton type='primary'>I need Taro UI</AtButton>
-        <Text>Taro UI 支持 Vue 了吗？</Text>
-        <AtButton type='primary' circle={true}>支持</AtButton>
-        <Text>共建？</Text>
-        <AtButton type='secondary' circle={true}>来</AtButton>
-      </View>
+      <AtForm
+        onSubmit={this.onSubmit.bind(this)}
+        onReset={this.onReset.bind(this)}
+      >
+        <AtInput
+          name='value'
+          title='文本'
+          type='text'
+          placeholder='单行文本'
+          value={this.state['value']}
+          onChange={this.handleChange.bind(this, 'value')}
+        />
+        <AtButton type="primary" formType='submit'>提交</AtButton>
+        <AtButton type="primary" formType='reset'>重置</AtButton>
+      </AtForm>
     )
   }
 }
