@@ -3,7 +3,8 @@ export default {
     'pages/login/login',
     'pages/line/line',
     'pages/index/index',
-    'pages/test/index'
+    'pages/test/index',
+    'pages/line/line'
   ],
   window: {
     backgroundTextStyle: 'light',
