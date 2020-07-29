@@ -1,5 +1,5 @@
-import Taro, { Component } from "./node_modules/@tarojs/taro";
-import { View } from "./node_modules/@tarojs/components";
+import Taro, { Component } from "@tarojs/taro";
+import { View } from "@tarojs/components";
 import LineChart from '../../components/LineChart'
 import "./line.scss";
 
@@ -7,6 +7,7 @@ export default class Line extends Component {
   config = {
     navigationBarTitleText: "折线图示例"
   };
+  lineChart;
   componentDidMount() {
     const chartData = {
       dimensions: {
