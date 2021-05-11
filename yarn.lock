@@ -1469,6 +1469,19 @@
     swiper "4.4.2"
     weui "^1.1.2"
 
+"@tarojs/components@^1.3.10":
+  version "1.3.46"
+  resolved "https://registry.nlark.com/@tarojs/components/download/@tarojs/components-1.3.46.tgz#c5db32ff201f7df4011c290f213930b17672c28d"
+  integrity sha1-xdsy/yAfffQBHCkPITkwsXZywo0=
+  dependencies:
+    better-scroll "^1.14.1"
+    classnames "^2.2.5"
+    intersection-observer "^0.7.0"
+    omit.js "^1.0.0"
+    resolve-pathname "^3.0.0"
+    swiper "4.4.2"
+    weui "^1.1.2"
+
 "@tarojs/helper@3.0.5":
   version "3.0.5"
   resolved "https://registry.npm.taobao.org/@tarojs/helper/download/@tarojs/helper-3.0.5.tgz?cache=0&sync_timestamp=1594888249620&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fhelper%2Fdownload%2F%40tarojs%2Fhelper-3.0.5.tgz#229e6b277bb2e35b1e34fa63a2a4b3680632542a"
@@ -1617,12 +1630,40 @@
     unfetch "^4.1.0"
     whatwg-fetch "^2.0.4"
 
+"@tarojs/taro-h5@^1.3.10":
+  version "1.3.46"
+  resolved "https://registry.nlark.com/@tarojs/taro-h5/download/@tarojs/taro-h5-1.3.46.tgz#78c1dfca4f48ab3ff307ad08f9e3296ad74730df"
+  integrity sha1-eMHfyk9Iqz/zB60I+eMpatdHMN8=
+  dependencies:
+    base64-js "^1.3.0"
+    jsonp-retry "^1.0.3"
+    mobile-detect "^1.4.2"
+    raf "^3.4.1"
+    whatwg-fetch "^2.0.4"
+
 "@tarojs/taro-loader@3.0.5":
   version "3.0.5"
   resolved "https://registry.npm.taobao.org/@tarojs/taro-loader/download/@tarojs/taro-loader-3.0.5.tgz#2f5291e0558ed732922a53f2e6f9897d38089cce"
   integrity sha1-L1KR4FWO1zKSKlPy5vmJfTgInM4=
   dependencies:
     loader-utils "^1.2.3"
+
+"@tarojs/taro-weapp@^1.3.10":
+  version "1.3.46"
+  resolved "https://registry.nlark.com/@tarojs/taro-weapp/download/@tarojs/taro-weapp-1.3.46.tgz#47b7a6c8f847525c0f61816c1af69ab48152e737"
+  integrity sha1-R7emyPhHUlwPYYFsGvaatIFS5zc=
+  dependencies:
+    "@tarojs/taro" "1.3.46"
+    "@tarojs/utils" "1.3.46"
+    lodash "^4.17.10"
+    prop-types "^15.6.1"
+
+"@tarojs/taro@1.3.46", "@tarojs/taro@^1.3.10":
+  version "1.3.46"
+  resolved "https://registry.nlark.com/@tarojs/taro/download/@tarojs/taro-1.3.46.tgz#ca6994aed3c60cdeefe36613d94036bc2e2ea3c9"
+  integrity sha1-ymmUrtPGDN7v42YT2UA2vC4uo8k=
+  dependencies:
+    "@tarojs/utils" "1.3.46"
 
 "@tarojs/taro@3.0.5":
   version "3.0.5"
@@ -1680,6 +1721,11 @@
     lodash "^4.17.5"
     prettier "^1.14.2"
     typescript "^3.2.2"
+
+"@tarojs/utils@1.3.46":
+  version "1.3.46"
+  resolved "https://registry.nlark.com/@tarojs/utils/download/@tarojs/utils-1.3.46.tgz#a4d38fdc61df51c9bad52c490b6df2ce5a232799"
+  integrity sha1-pNOP3GHfUcm61SxJC23yzlojJ5k=
 
 "@tarojs/webpack-runner@3.0.5":
   version "3.0.5"
@@ -8310,10 +8356,15 @@ lodash@4.17.15:
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz?cache=0&sync_timestamp=1594226827854&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
 
-lodash@4.17.19, "lodash@4.6.1 || ^4.16.1", lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0, lodash@~4.17.10:
+lodash@4.17.19:
   version "4.17.19"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.19.tgz?cache=0&sync_timestamp=1594226827854&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha1-5I3e2+MLMyF4PFtDAfvTU7weSks=
+
+lodash@4.17.21, "lodash@4.6.1 || ^4.16.1", lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0, lodash@~4.17.10:
+  version "4.17.21"
+  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz?cache=0&sync_timestamp=1616738515526&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
 
 log-symbols@^2.0.0, log-symbols@^2.2.0:
   version "2.2.0"
@@ -9031,6 +9082,24 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   version "2.6.2"
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.2.tgz?cache=0&sync_timestamp=1594317361810&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fneo-async%2Fdownload%2Fneo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
+
+nerv-shared@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.nlark.com/nerv-shared/download/nerv-shared-1.4.0.tgz#4ae903f215888ab886b3d04ae3b95d5327e67f43"
+  integrity sha1-SukD8hWIiriGs9BK47ldUyfmf0M=
+
+nerv-utils@1.4.5:
+  version "1.4.5"
+  resolved "https://registry.nlark.com/nerv-utils/download/nerv-utils-1.4.5.tgz#3e017a8a1b605b35ee31ad396a038207fbc597b0"
+  integrity sha1-PgF6ihtgWzXuMa05agOCB/vFl7A=
+
+nervjs@^1.4.3:
+  version "1.5.7"
+  resolved "https://registry.nlark.com/nervjs/download/nervjs-1.5.7.tgz#29798a8e1473b33329b9d2af4022d8818c7ff4cd"
+  integrity sha1-KXmKjhRzszMpudKvQCLYgYx/9M0=
+  dependencies:
+    nerv-shared "1.4.0"
+    nerv-utils "1.4.5"
 
 next-tick@~1.0.0:
   version "1.0.0"
@@ -10505,7 +10574,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -12642,6 +12711,19 @@ taro-css-to-react-native@^2.0.4:
     css-color-keywords "^1.0.0"
     css-mediaquery "^0.1.2"
     postcss-value-parser "^3.3.0"
+
+taro-echarts@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.nlark.com/taro-echarts/download/taro-echarts-1.1.2.tgz#fa756d4f0d7b928edd67824a5cefc84d2daff053"
+  integrity sha1-+nVtTw17ko7dZ4JKXO/ITS2v8FM=
+  dependencies:
+    "@tarojs/components" "^1.3.10"
+    "@tarojs/taro" "^1.3.10"
+    "@tarojs/taro-h5" "^1.3.10"
+    "@tarojs/taro-weapp" "^1.3.10"
+    lodash "^4.17.15"
+    nervjs "^1.4.3"
+    prop-types "^15.7.2"
 
 taro-ui@^3.0.0-alpha.3:
   version "3.0.0-alpha.3"
